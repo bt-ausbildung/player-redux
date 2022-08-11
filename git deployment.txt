@@ -1,0 +1,76 @@
+
+
+(git config --global --unset credential.helper) entfernt gecacheten key
+neuen SSH generieren (Konsole)
+ssh-keygen -t ed25519 -C "gel.nikos@mailo.com"
+
+C:\Users\geladaris\.ssh
+
+
+
+github
+
+Video GitHub deploy
+https://www.youtube.com/watch?v=F8s4Ng-re0E
+
+
+Passwort
+grid-demo_2022
+
+Username
+grid-demo
+
+git log (zeigt was wir gemacht haben)
+
+1. gehe zu gitHub und erstelle ein neues repository (Name sinnvoll halt).
+
+1. ins Projekt:
+npm install gh-pages --save-dev
+
+
+3. in die package.json
+a) {
+  "homepage": "https://<DeinUserName>.github.io/<DeinProjektName>",
+  "name": "grid-demo",
+  "version": "0.1.0",
+  
+  ("homepage": "https://<DeinUserName>.github.io/<DeinProjektName>")
+  
+  
+b)  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+
+4. git init 
+5. git remote add origin https://github.com/rex/ng-ausbildung.git
+git remote add origin https://github.com/tiknicker/.docurex.git
+
+6. git status
+7. git add .
+
+8. bei Änderungen im Code
+ git commit -m "<deploy my app grid-demo second>"
+
+9. npm run deploy
+
+10. git branch -M main
+
+11. git push -u origin master
+(nur eine Referenz zum Code, der ist jetzt drin. Dieser Schritt ist nicht notwendig um live zu gehen)
+
+
+ git config --global user.email "gel.nikos@gmail.com"
+  git config --global user.name "tiknicker"
+
+
+(wenn Fehlermeldug "'gh-pages' already exists" gehe zu \node_modules\.cache (in Deinem Projekt) und lösche den Ordner 'gh-pages')
+
+
+lokal:
+erst: git add .
+dann: git commit -m "blabla"
+
+
+
+

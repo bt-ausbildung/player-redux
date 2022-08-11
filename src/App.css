@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  color:#35654d;
+  font-family: Montserrat;
+}
+
+.formular {
+  max-width: 30rem;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+button {
+  margin-top: .5rem;
+}
+
+.liste {
+  /* background-color: gainsboro; */
+  margin: 1rem auto;
+  padding: .5rem .2rem;
+  max-width: 38vw;
+  border: solid #7d9380 1px;
+  border-radius: .5rem;
+  box-shadow: 12px 10px 30px -3px rgba(0,0,0,0.1);
+}
+
+.liste:hover {
+  transform: scale(1.05);
+  transition: .3s ease-in-out;
+  transition-delay: .1s;
+}
